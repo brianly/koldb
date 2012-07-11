@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Layout - Bootstrap Admin</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+
+    <link href="./css/adminia.css" rel="stylesheet">
+    <link href="./css/adminia-responsive.css" rel="stylesheet">
+
+
+    <link href="./css/pages/plans.css" rel="stylesheet">
+
+
+    <link href="./css/jquery.visualize.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+
+	<div class="navbar-inner">
+
+		<div class="container">
+
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
+			<a class="brand" href="./"><i class="icon-user"></i> KOL Explorer</a>
+
+			<div class="nav-collapse">
+
+				<ul class="nav pull-right">
+					<li>
+						<a href="#"><span class="badge badge-warning">7</span></a>
+					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li class="dropdown">
+
+						<a data-toggle="dropdown" class="dropdown-toggle " href="#">
+							Rod Howard <b class="caret"></b>
+						</a>
+
+						<ul class="dropdown-menu">
+							<li>
+								<a href="./account.html"><i class="icon-user"></i> Account Setting  </a>
+							</li>
+
+							<li>
+								<a href="./change_password.html"><i class="icon-lock"></i> Change Password</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li>
+								<a href="./"><i class="icon-off"></i> Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div> <!-- /nav-collapse -->
+
+		</div> <!-- /container -->
+
+	</div> <!-- /navbar-inner -->
+
+</div> <!-- /navbar -->
+
+
+
+
+<div id="content">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="span3">
+
+				<ul id="main-nav" class="nav nav-tabs nav-stacked">
+
+					<li>
+						<a href="./">
+							<i class="icon-home"></i>
+							Home
+						</a>
+					</li>
+
+					<li>
+						<a href="./demo.html">
+							<i class="icon-list"></i>
+							Show All
+							<span class="label label-warning pull-right">105</span>
+						</a>
+					</li>
+
+					<li class="active">
+						<a href="./demo2.html">
+							<i class="icon-th-large"></i>
+							Individual KOL
+
+						</a>
+					</li>
+
+
+					<li>
+						<a href="./faq.html">
+							<i class="icon-pushpin"></i>
+							FAQ
+						</a>
+					</li>
+
+					<li>
+						<a href="./plans.html">
+							<i class="icon-th-list"></i>
+							Pricing Plans
+						</a>
+					</li>
+
+					<li>
+						<a href="./grid.html">
+							<i class="icon-th-large"></i>
+							Grid Layout
+						</a>
+					</li>
+
+					<li>
+						<a href="./charts.html">
+							<i class="icon-signal"></i>
+							Charts
+						</a>
+					</li>
+
+					<li>
+						<a href="./account.html">
+							<i class="icon-user"></i>
+							User Account
+						</a>
+					</li>
+
+					<li>
+						<a href="./login.html">
+							<i class="icon-lock"></i>
+							Login
+						</a>
+					</li>
+
+				</ul>
+
+
+
+				<hr />
+
+				<div class="sidebar-extra">
+					<p>This is a demo site. It may break occastionally
+					as experimental updates are made to the interface
+					and backend code.</p>
+				</div> <!-- .sidebar-extra -->
+
+				<br />
+
+			</div> <!-- /span3 -->
+
+
+
+			<div class="span9">
+
+<!-- 				<h1 class="page-title">
+					<i class="icon-th-large"></i>
+					Account View
+				</h1> -->
+
+
+				<div class="row">
+
+					<div class="span9">
+
+						<div class="widget">
+
+							<div class="widget-content">
+
+								<h3>Rob Howard</h3>
+
+
+
+
+				<div class="span9">
+
+					<div class="account-avatar">
+						<img src="./img/headshot.png" alt="" class="thumbnail" />
+					</div> <!-- /account-avatar -->
+
+					<div class="account-details">
+						<span class="account-name">Dana-Farber/Harvard Cancer Center</span>
+
+						<span class="account-role">
+							+1-613-632-2175 | + 1-613-632-1930
+						</span>
+
+						<span class="account-role">
+							rob_howard@dfci.harvard.edu
+						</span>
+
+					</div> <!-- /account-details -->
+<br />
+				</div> <!-- /account-container -->
+
+
+
+<div class="span3">
+	<h6>Address</h6>
+	<div>44 Binney St.</div>
+	<div>Mayer 2</div>
+	<div>Boston, MA 02115</div>
+	<div>United States</div>
+	<br />
+</div>
+
+
+<div class="span4">
+	<h6>Specialities</h6>
+	<div><strong>Primary</strong><br />Oncology</div>
+	<div><strong>Secondary</strong><br />Paediatrics</div>
+	<br />
+</div>
+
+<div class="span4">
+	<h6>Communication Preferences</h6>
+	<div>E-Mail only</div>
+</div>
+
+
+
+							</div> <!-- /widget-content -->
+
+						</div> <!-- /widget -->
+
+					</div> <!-- /span9 -->
+
+				</div> <!-- /row -->
+
+
+
+
+
+				<div class="row">
+
+					<div class="span9">
+
+						<div class="widget">
+
+							<div class="widget-content">
+
+								<h3>Impact &amp; Influence</h3>
+
+
+
+
+
+
+
+
+								<div class="tabbable">
+						<ul class="nav nav-tabs">
+						  <li class="active">
+						    <a href="#1" data-toggle="tab">Publications</a>
+						  </li>
+						  <li><a href="#2" data-toggle="tab">Conferences</a></li>
+						  <li><a href="#3" data-toggle="tab">Competitor Activity</a></li>
+						  <li><a href="#4" data-toggle="tab">Social Media</a></li>
+						</ul>
+
+							<div class="tab-content">
+
+								<div class="tab-pane active" id="1">
+<div class="span4">
+	<h6>High Impact</h6>
+		<li><a href="#">High impact publication 1</a>
+		<li><a href="#">High impact publication 2</a>
+		<li><a href="#">High impact publication 3</a>
+</div>
+
+
+<div class="span4">
+	<h6>Product Specific</h6>
+		<li><a href="#">Product publication 1</a>
+		<li><a href="#">Product publication 2</a>
+		<li><a href="#">Product publication 3</a>
+</div>
+
+<div class="span9">
+	<br />
+	<a href="#">View publications detail page</a>
+</div>
+
+								</div> <!-- /tab-pane -->
+
+								<div class="tab-pane" id="2">
+
+
+
+<div class="span4">
+	<h6>Conference Participation</h6>
+	<ul>
+		<li><a href="#">Record1</a></li>
+		<li><a href="#">Record2</a></li>
+		<li><a href="#">Record3</a></li>
+	</ul>
+</div>
+
+
+<div class="span4">
+	<h6>Organising Committee</h6>
+	<ul>
+		<li><a href="#">Record1</a></li>
+		<li><a href="#">Record2</a></li>
+		<li><a href="#">Record3</a></li>
+	</ul>
+</div>
+
+<div class="span4">
+	<h6>Symposium Chairperson</h6>
+	<ul>
+		<li><a href="#">Record1</a></li>
+		<li><a href="#">Record2</a></li>
+		<li><a href="#">Record3</a></li>
+	</ul>
+</div>
+
+
+<div class="span4">
+	<h6>Symposium Speaker</h6>
+	<ul>
+		<li><a href="#">Record1</a></li>
+		<li><a href="#">Record2</a></li>
+		<li><a href="#">Record3</a></li>
+	</ul>
+</div>
+
+<div class="span9">
+	<br />
+	<a href="#">View conference detail page</a>
+</div>
+
+								</div>
+
+
+<div class="tab-pane" id="3">
+	<div class="span8">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div> <!-- /tab-pane -->
+
+
+<div class="tab-pane" id="4">
+	<div class="span8">
+		<h6>Twitter Activity</h6>
+		<div id="bar-chart" class="chart-holder"></div> <!-- /donut-chart -->
+	</div>
+</div> <!-- /tab-pane -->
+
+							</div>
+
+
+						</div>
+
+							</div> <!-- /widget-content -->
+
+						</div> <!-- /widget -->
+
+					</div> <!-- /span9 -->
+
+				</div> <!-- /row -->
+
+
+				<div class="row">
+
+									<div class="span9">
+
+						<div class="widget">
+
+							<div class="widget-content">
+
+								<h3>Celgene Internal</h3>
+
+
+
+
+
+
+
+
+								<div class="tabbable">
+						<ul class="nav nav-tabs">
+						  <li class="active">
+						    <a href="#1b" data-toggle="tab">Management</a>
+						  </li>
+						  <li><a href="#2b" data-toggle="tab">Compliance</a></li>
+						  <li><a href="#3b" data-toggle="tab">Publications</a></li>
+						  <li><a href="#4b" data-toggle="tab">Company Contacts</a></li>
+						</ul>
+
+							<div class="tab-content">
+
+								<div class="tab-pane active" id="1b">
+<div class="span9">
+		<li><a href="#">Clinical Trials</a>
+		<li><a href="#">Other Activities</a>
+		<li><a href="#">Future Activities</a>
+		<li><a href="#">Celgene Ranking</a>
+</div>
+
+<div class="span9">
+	<br />
+	<a href="#">View management page</a>
+</div>
+
+								</div> <!-- /tab-pane -->
+
+								<div class="tab-pane" id="2b">
+
+<div class="span9">
+		<li><a href="#">Potential Conflicts</a>
+		<li><a href="#">Issue Management</a>
+		<li><a href="#">Compliance Data</a>
+		<li><a href="#">Training</a>
+</div>
+
+<div class="span9">
+	<br />
+	<a href="#">View compliance page</a>
+</div>
+
+
+								</div>
+
+
+<div class="tab-pane" id="3b">
+<div class="span9">
+		<li><a href="#">Publication1</a>
+		<li><a href="#">Publication2</a>
+		<li><a href="#">Publication3</a>
+		<li><a href="#">Publication4</a>
+</div>
+
+<div class="span9">
+	<br />
+	<a href="#">View Celgene publications page</a>
+</div>
+</div> <!-- /tab-pane -->
+
+
+
+
+<div class="tab-pane" id="4b">
+<div class="span4">
+	<h6>National Contacts</h6>
+		<li><a href="#">Contact1</a>
+		<li><a href="#">Contact2</a>
+		<li><a href="#">Contact3</a>
+</div>
+
+
+<div class="span4">
+	<h6>International Contacts</h6>
+		<li><a href="#">Contact1</a>
+		<li><a href="#">Contact2</a>
+		<li><a href="#">Contact3</a>
+</div>
+
+<div class="span9">
+	<br />
+	<a href="#">View publications detail page</a>
+</div>
+</div> <!-- /tab-pane -->
+
+							</div>
+
+
+						</div>
+
+							</div> <!-- /widget-content -->
+
+						</div> <!-- /widget -->
+
+					</div> <!-- /span9 -->
+
+				</div> <!-- /row -->
+
+
+			</div> <!-- /span9 -->
+
+
+		</div> <!-- /row -->
+
+	</div> <!-- /container -->
+
+</div> <!-- /content -->
+
+
+<div id="footer">
+
+	<div class="container">
+		<hr>
+		<p>&copy; 2012 iSensa. All rights reserved.</p>
+	</div> <!-- /container -->
+
+</div> <!-- /footer -->
+
+
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/bar.js"></script>ˆ
+  </body>
+</html>
