@@ -13,7 +13,11 @@ def index(request):
     return HttpResponse(t.render(c))
 
 def detail(request, kol_id):
-    return render_to_response('detail.html',  {'kol_id': kol_id})
+    try:
+        k = Kol.objects.get(pk=kol_id)
+    except Poll.DoesNotExist:
+        raise Http404
+    return render_to_response('detail.html', {'kol': k})
 
 def results(request, poll_id):
     return HttpResponse("You're looking at the results of poll %s." % poll_id)
