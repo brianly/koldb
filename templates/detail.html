@@ -157,7 +157,7 @@
 
 							<div class="widget-content">
 
-								<h3>{{ kol.first_name }} {{ kol.last_name }} (ID={{ kol.id }})</h3>
+								<h3>{{ kol.first_name }} {{ kol.last_name }}</h3>
 
 
 
@@ -169,14 +169,14 @@
 					</div> <!-- /account-avatar -->
 
 					<div class="account-details">
-						<span class="account-name">Dana-Farber/Harvard Cancer Center</span>
+						<span class="account-name">{{ kol.organisation }}</span>
 
 						<span class="account-role">
-							+1-613-632-2175 | + 1-613-632-1930
+							{{ kol.office_phone }} | {{ kol.mobile_phone }}
 						</span>
 
 						<span class="account-role">
-							rob_howard@dfci.harvard.edu
+							{{ kol.email }}
 						</span>
 
 					</div> <!-- /account-details -->
@@ -187,24 +187,24 @@
 
 <div class="span3">
 	<h6>Address</h6>
-	<div>44 Binney St.</div>
-	<div>Mayer 2</div>
-	<div>Boston, MA 02115</div>
-	<div>United States</div>
+	<div>{{ kol.address1 }}</div>
+	<div>{{ kol.address2 }}</div>
+	<div>{{ kol.city }}, {{ kol.state }} {{ kol.postcode }}</div>
+	<div>{{ kol.country }}</div>
 	<br />
 </div>
 
 
 <div class="span4">
 	<h6>Specialities</h6>
-	<div><strong>Primary</strong><br />Oncology</div>
-	<div><strong>Secondary</strong><br />Paediatrics</div>
+	<div><strong>Primary</strong><br />{{ kol.speciality1 }}</div>
+	<div><strong>Secondary</strong><br />{{ kol.speciality2 }}</div>
 	<br />
 </div>
 
 <div class="span4">
 	<h6>Communication Preferences</h6>
-	<div>E-Mail only</div>
+	<div>{{ kol.communication_preference }}</div>
 </div>
 
 
