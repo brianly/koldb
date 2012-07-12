@@ -1,0 +1,9 @@
+{% if kol_list %}
+    <ul>
+    {% for kol in kol_list %}
+        <li><a href="/kols/{{ kol.id }}/">{{ kol.first_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No KOLs are available.</p>
+{% endif %}
