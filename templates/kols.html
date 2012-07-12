@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Dashboard - Bootstrap Admin</title>
+    <title>KOL Listing page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,8 +16,11 @@
     <link href="http://brianlyttle.com/demos/web/koldb001/ui/css/adminia.css" rel="stylesheet">
     <link href="http://brianlyttle.com/demos/web/koldb001/ui/css/adminia-responsive.css" rel="stylesheet">
 
-    <link href="http://brianlyttle.com/demos/web/koldb001/ui/css/pages/dashboard.css" rel="stylesheet">
 
+    <link href="http://brianlyttle.com/demos/web/koldb001/ui/css/pages/plans.css" rel="stylesheet">
+
+
+    <link href="http://brianlyttle.com/demos/web/koldb001/ui/css/jquery.visualize.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -94,17 +97,16 @@
 
             <div class="span3">
 
-
                 <ul id="main-nav" class="nav nav-tabs nav-stacked">
 
-                    <li class="active">
+                    <li>
                         <a href="/">
                             <i class="icon-home"></i>
                             Home
                         </a>
                     </li>
 
-                    <li>
+                    <li class="active">
                         <a href="/kols/">
                             <i class="icon-list"></i>
                             Show All
@@ -113,13 +115,16 @@
                     </li>
 
                     <li>
-                        <a href="/kols/1">
+                        <a href="/kols/1/">
                             <i class="icon-th-large"></i>
                             Individual KOL
 
                         </a>
                     </li>
                 </ul>
+
+
+
                 <hr />
 
                 <div class="sidebar-extra">
@@ -136,97 +141,93 @@
 
             <div class="span9">
 
-                <h1 class="page-title">
-                    <i class="icon-home"></i>
-                    Dashboard
-                </h1>
-
-                <div class="stat-container">
-
-                    <div class="stat-holder">
-                        <div class="stat">
-                            <span>564</span>
-                            Metric 1
-                        </div> <!-- /stat -->
-                    </div> <!-- /stat-holder -->
-
-                    <div class="stat-holder">
-                        <div class="stat">
-                            <span>423</span>
-                            Metric 2
-                        </div> <!-- /stat -->
-                    </div> <!-- /stat-holder -->
-
-                    <div class="stat-holder">
-                        <div class="stat">
-                            <span>96</span>
-                            Metric 3
-                        </div> <!-- /stat -->
-                    </div> <!-- /stat-holder -->
-
-                    <div class="stat-holder">
-                        <div class="stat">
-                            <span>2</span>
-                            Metric 4
-                        </div> <!-- /stat -->
-                    </div> <!-- /stat-holder -->
-
-                </div> <!-- /stat-container -->
-
-                <div class="widget">
-
-                    <div class="widget-header">
-                        <i class="icon-signal"></i>
-                        <h3>Chart Sample</h3>
-                    </div> <!-- /widget-header -->
-
-                    <div class="widget-content">
-                        <div id="bar-chart" class="chart-holder"></div> <!-- /bar-chart -->
-                    </div> <!-- /widget-content -->
-
-                </div> <!-- /widget -->
-
-
-
-
-
-
+<!--                <h1 class="page-title">
+                    <i class="icon-th-large"></i>
+                    Account View
+                </h1> -->
 
 
                 <div class="row">
 
-                    <div class="span5">
+                    <div class="span9">
+
+
+                <h1 class="page-title">
+                    <i class="icon-home"></i>
+                    All KOLs
+                </h1>
 
                         <div class="widget">
 
-                            <div class="widget-header">
-                                <h3>5 Column</h3>
-                            </div> <!-- /widget-header -->
-
                             <div class="widget-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <table class="table table-striped table-bordered">
+
+{% if kol_list %}
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Country</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+    {% for kol in kol_list %}
+
+                                <tr>
+
+
+                                    <td>1</td>
+                                    <td>{{ kol.first_name }}</td>
+                                    <td>{{ kol.last_name }}</td>
+                                    <td>{{ kol.country }}</td>
+                                    <td class="action-td">
+                                        <a href="/kols/{{ kol.id }}/" class="btn btn-small btn-warning">
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+    {% endfor %}
+{% else %}
+    <tbody><tr>No KOLs are available.</tr>
+{% endif %}
+
+                            </tbody>
+                        </table>
+
+
+
+
+
+
+
                             </div> <!-- /widget-content -->
 
                         </div> <!-- /widget -->
 
-                    </div> <!-- /span5 -->
-
-                    <div class="span4">
-
-                        <div class="widget">
-
-                            <div class="widget-header">
-                                <h3>4 Column</h3>
-                            </div> <!-- /widget-header -->
-
-                            <div class="widget-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div> <!-- /widget-content -->
-
-                        </div> <!-- /widget -->
-                    </div> <!-- /span4 -->
+                    </div> <!-- /span9 -->
 
                 </div> <!-- /row -->
+
+
+
+
+
+                            </div> <!-- /widget-content -->
+
+                        </div> <!-- /widget -->
+
+                    </div> <!-- /span9 -->
+
+                </div> <!-- /row -->
+
+
+
+
 
             </div> <!-- /span9 -->
 
@@ -242,7 +243,7 @@
 
     <div class="container">
         <hr>
-        <p>&copy; 2012 Go Ideate.</p>
+        <p>&copy; 2012 iSensa. All rights reserved.</p>
     </div> <!-- /container -->
 
 </div> <!-- /footer -->
@@ -260,9 +261,7 @@
 <script src="http://brianlyttle.com/demos/web/koldb001/ui/js/jquery.flot.orderBars.js"></script>
 <script src="http://brianlyttle.com/demos/web/koldb001/ui/js/jquery.flot.resize.js"></script>
 
-
 <script src="http://brianlyttle.com/demos/web/koldb001/ui/js/bootstrap.js"></script>
-<script src="http://brianlyttle.com/demos/web/koldb001/ui/js/charts/bar.js"></script>
-
+<script src="http://brianlyttle.com/demos/web/koldb001/ui/js/charts/bar.js"></script>ˆ
   </body>
 </html>

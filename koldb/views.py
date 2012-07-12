@@ -2,17 +2,18 @@
 from koldb.models import Kol
 from django.http import HttpResponse
 from django.template import Context, loader
+from django.shortcuts import render_to_response
 
 def index(request):
     kol_list = Kol.objects.all().order_by('first_name')
-    t = loader.get_template('index.html')
+    t = loader.get_template('kols.html')
     c = Context({
         'kol_list': kol_list,
     })
     return HttpResponse(t.render(c))
 
-def detail(request, poll_id):
-    return HttpResponse("You're looking at poll %s." % poll_id)
+def detail(request, kol_id):
+    return render_to_response('detail.html',  {'kol_id': kol_id})
 
 def results(request, poll_id):
     return HttpResponse("You're looking at the results of poll %s." % poll_id)

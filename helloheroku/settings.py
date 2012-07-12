@@ -9,7 +9,7 @@ DATABASES = {
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-    }    
+    }
     }
 
 
@@ -123,7 +123,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/brianly/dev/github/helloheroku/templates/'
+    '/Users/brianly/dev/github/koldb/templates/'
 )
 
 INSTALLED_APPS = (

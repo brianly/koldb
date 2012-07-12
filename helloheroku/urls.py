@@ -6,11 +6,12 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 
+    url(r'^$', 'helloheroku.views.index'),
     url(r'^kols/$', 'koldb.views.index'),
-    url(r'^kols/(?P<poll_id>\d+)/$', 'koldb.views.detail'),
+    url(r'^kols/(?P<kol_id>\d+)/$', 'koldb.views.detail'),
     url(r'^kols/(?P<poll_id>\d+)/results/$', 'koldb.views.results'),
     url(r'^kols/(?P<poll_id>\d+)/vote/$', 'koldb.views.vote'),
-    
+
 
 
 
