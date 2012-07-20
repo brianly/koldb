@@ -41,7 +41,11 @@ class Kol(models.Model):
     speciality1 = models.CharField(max_length=200, choices=DISEASE_AREAS)
     speciality2 = models.CharField(max_length=200, choices=DISEASE_AREAS)
     photo_url = models.CharField(max_length=500)
-    international = models.CharField(max_length=10, blank=True, null=True)
+    INT_VALS = {
+        (u'Yes', u'Yes'),
+        (u'No', u'No'),
+    }
+    international = models.CharField(max_length=10, blank=True, null=True, choices=INT_VALS)
 
 
 
