@@ -27,6 +27,7 @@ class Kol(models.Model):
     speciality1 = models.CharField(max_length=200)
     speciality2 = models.CharField(max_length=200)
     photo_url = models.CharField(max_length=500)
+    international = models.CharField(max_length=10, blank=True, null=True)
 
     def __unicode__(self):
         return "%s %s" % (self.first_name, self.last_name)

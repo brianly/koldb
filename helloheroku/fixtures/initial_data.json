@@ -19,6 +19,7 @@
       "communication_preference": "email", 
       "email": "tony.francis@unitedh.gov.us", 
       "photo_url": "http://www.empowereddoctor.com/library/photo/voltera_1.gif"
+      ,"international": "yes"
     }
   }, 
   {
@@ -41,6 +42,7 @@
       "communication_preference": "mobile phone", 
       "email": "m.bacca1@torino.edu", 
       "photo_url": "http://myeloma.org/images/link_thumb_nail/boccadoro_board.jpg"
+      ,"international": "yes"
     }
   }, 
   {
@@ -63,6 +65,7 @@
       "communication_preference": "email", 
       "email": "fei.liu@bejing.edu.cn", 
       "photo_url": "http://soe.northumbria.ac.uk/ocr/csndsp/Photos/Fei_Liu.JPG"
+      ,"international": "yes"
     }
   }, 
   {
@@ -85,6 +88,7 @@
       "communication_preference": "email", 
       "email": "herve.alois@mirt.edu", 
       "photo_url": "http://myeloma.org/images/content_author/barlogie.jpg"
+      ,"international": "no"
     }
   }, 
   {
@@ -107,6 +111,7 @@
       "communication_preference": "E-Mail Only", 
       "email": "jdavies@med.harvard.edu", 
       "photo_url": "http://brianlyttle.com/demos/web/koldb001/ui/img/headshot.png"
+      ,"international": "no"
     }
   }, 
   {
@@ -129,6 +134,7 @@
       "communication_preference": "E-Mail and Phone", 
       "email": "mandrina@med.napoli.edu.it", 
       "photo_url": "http://brianlyttle.com/demos/web/koldb001/ui/img/headshot.png"
+      ,"international": "yes"
     }
   }, 
   {
@@ -151,6 +157,7 @@
       "communication_preference": "email", 
       "email": "andre@schiltz@manchester.ac.uk", 
       "photo_url": "http://brianlyttle.com/demos/web/koldb001/ui/img/headshot.png"
+      ,"international": "yes"
     }
   }
 ]
