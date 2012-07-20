@@ -24,10 +24,26 @@ class Kol(models.Model):
     postcode = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     communication_preference = models.CharField(max_length=50)
-    speciality1 = models.CharField(max_length=200)
-    speciality2 = models.CharField(max_length=200)
+    DISEASE_AREAS = (
+        (u'MM', u'MM'),
+        (u'CLL', u'CLL'),
+        (u'NHL', u'NHL'),
+        (u'CLL/NHL', u'CLL/NHL'),
+        (u'MDS', u'MDS'),
+        (u'AML', u'AML'),
+        (u'MDS/AML', u'MDS/AML'),
+        (u'ST-Breast', u'ST-Breast'),
+        (u'ST-Lung', u'ST-Lung'),
+        (u'ST-Melanoma', u'ST-Melanoma'),
+        (u'ST-Pancreatic', u'ST-Pancreatic'),
+        (u'ST-Melanoma/Pancreatic', u'ST-Melanoma/Pancreatic'),
+    )
+    speciality1 = models.CharField(max_length=200, choices=DISEASE_AREAS)
+    speciality2 = models.CharField(max_length=200, choices=DISEASE_AREAS)
     photo_url = models.CharField(max_length=500)
     international = models.CharField(max_length=10, blank=True, null=True)
+
+
 
     def __unicode__(self):
         return "%s %s" % (self.first_name, self.last_name)
