@@ -195,18 +195,17 @@
 </div>
 
 
-<div class="span4">
-	<h6>MADL Feedback</h6>
-	<div><strong>Disease Area</strong> {{ kol.speciality1 }}</div>
-	<div><strong>Global/National Identified OL</strong> {{ kol.international }}</div>
-	<br />
-</div>
-
 <div class="span3">
 	<h6>Communication Preferences</h6>
 	<div>{{ kol.communication_preference }}</div>
 </div>
 
+<div class="span6">
+	<h6>MADL Feedback</h6>
+	<div><strong>Primary Disease Area</strong> {{ kol.speciality1 }} <strong>Secondary Disease Area</strong> {{ kol.speciality2 }}</div>
+	<div><strong>International KOL</strong> {{ kol.international }}</div>
+	<br />
+</div>
 
 							</div> <!-- /widget-content -->
 
