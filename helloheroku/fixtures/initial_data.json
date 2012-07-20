@@ -1,0 +1,156 @@
+[
+  {
+    "pk": 4, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Philadelphia", 
+      "first_name": "Tony", 
+      "last_name": "Francis", 
+      "address2": "Philadelphia State Health Centre", 
+      "address1": "Nightingale Unit", 
+      "organisation": "United Hsopital", 
+      "speciality1": "Non Hodgkins Lymphoma", 
+      "office_phone": "001 456 987 2344", 
+      "state": "Pennsylvania", 
+      "mobile_phone": "001 508 234 5687", 
+      "speciality2": "Chemotherapy", 
+      "postcode": "PEN 4890", 
+      "country": "United States", 
+      "communication_preference": "email", 
+      "email": "tony.francis@unitedh.gov.us", 
+      "photo_url": "http://www.empowereddoctor.com/library/photo/voltera_1.gif"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Milan", 
+      "first_name": "Mario", 
+      "last_name": "Boccadoro", 
+      "address2": "Central District", 
+      "address1": "Dept of Hematology", 
+      "organisation": "University of Torino", 
+      "speciality1": "Multiple Myeloma", 
+      "office_phone": "0057 345 876 9909", 
+      "state": "Mil", 
+      "mobile_phone": "0057 895 345 3892", 
+      "speciality2": "Adverse Effects", 
+      "postcode": "IT1 459084", 
+      "country": "Italy", 
+      "communication_preference": "mobile phone", 
+      "email": "m.bacca1@torino.edu", 
+      "photo_url": "http://myeloma.org/images/link_thumb_nail/boccadoro_board.jpg"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Bejing", 
+      "first_name": "Fei", 
+      "last_name": "Liu", 
+      "address2": "ShouLou", 
+      "address1": "Bejing University Hospital", 
+      "organisation": "Bejing Academy", 
+      "speciality1": "Non Hodgkins Lymphoma", 
+      "office_phone": "0081 234 555 3434", 
+      "state": "BB2", 
+      "mobile_phone": "0081 345 678 9344", 
+      "speciality2": "Cell kinetics", 
+      "postcode": "BB23 45677", 
+      "country": "China", 
+      "communication_preference": "email", 
+      "email": "fei.liu@bejing.edu.cn", 
+      "photo_url": "http://soe.northumbria.ac.uk/ocr/csndsp/Photos/Fei_Liu.JPG"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Little Rock", 
+      "first_name": "Herve", 
+      "last_name": "Avet-Loiseau", 
+      "address2": "Central", 
+      "address1": "University of Arkansas", 
+      "organisation": "Myeloma Institute for Research and Therapy", 
+      "speciality1": "Hematology", 
+      "office_phone": "003 986 4576", 
+      "state": "Arkansas", 
+      "mobile_phone": "003 986 4455", 
+      "speciality2": "Tissue Kinetics", 
+      "postcode": "1323-98644", 
+      "country": "United States", 
+      "communication_preference": "email", 
+      "email": "herve.alois@mirt.edu", 
+      "photo_url": "http://myeloma.org/images/content_author/barlogie.jpg"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Boston", 
+      "first_name": "Jim", 
+      "last_name": "Davies", 
+      "address2": "Room #232b", 
+      "address1": "377 Bromley Ave", 
+      "organisation": "Harvard Medical School", 
+      "speciality1": "Oncology", 
+      "office_phone": "+1 234-338-9243", 
+      "state": "MA", 
+      "mobile_phone": "+1 239-888-3736", 
+      "speciality2": "Paediatrics", 
+      "postcode": "012393", 
+      "country": "United States", 
+      "communication_preference": "E-Mail Only", 
+      "email": "jdavies@med.harvard.edu", 
+      "photo_url": "http://brianlyttle.com/demos/web/koldb001/ui/img/headshot.png"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Napoli", 
+      "first_name": "Marco", 
+      "last_name": "Andrina", 
+      "address2": "Facolt\u00e0 di Medicina e Chirurgia", 
+      "address1": "Via S.Maria di Costantinopoli 104", 
+      "organisation": "Seconda Universit\u00e0 degli Studi di Napoli", 
+      "speciality1": "Cardiovacular", 
+      "office_phone": "+39 823 275 285", 
+      "state": "-", 
+      "mobile_phone": "+39 081 566 7235", 
+      "speciality2": "Aortic Stenosis", 
+      "postcode": " I-80138", 
+      "country": "Italy", 
+      "communication_preference": "E-Mail and Phone", 
+      "email": "mandrina@med.napoli.edu.it", 
+      "photo_url": "http://brianlyttle.com/demos/web/koldb001/ui/img/headshot.png"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "koldb.kol", 
+    "fields": {
+      "city": "Manchester", 
+      "first_name": "Andre", 
+      "last_name": "Schultz", 
+      "address2": "Manchester Royal Informary", 
+      "address1": "Oncology Unit ", 
+      "organisation": "Manchester Royal Infirmary", 
+      "speciality1": "Multiple Myeloma", 
+      "office_phone": "0161 265 5094", 
+      "state": "Lancashire", 
+      "mobile_phone": "07725 456987", 
+      "speciality2": "Plasma Cell Membrane", 
+      "postcode": "M7 3PJ", 
+      "country": "UK", 
+      "communication_preference": "email", 
+      "email": "andre@schiltz@manchester.ac.uk", 
+      "photo_url": "http://brianlyttle.com/demos/web/koldb001/ui/img/headshot.png"
+    }
+  }
+]
